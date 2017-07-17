@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="RutePredictor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,149 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Beb-Bt-mZi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoAn" translatesAutoresizingMaskIntoConstraints="NO" id="VAM-Tc-8nc">
+                                        <rect key="frame" x="137" y="52" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="agK-Dw-UFz"/>
+                                            <constraint firstAttribute="width" constant="100" id="v95-LD-jzd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yT3-fl-SBf">
+                                        <rect key="frame" x="12" y="253" width="351" height="175"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-mU-oxg" customClass="FancyTextFields" customModule="RutePredictor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="351" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="mr1-82-iBG"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lnl-UV-vqd" customClass="FancyTextFields" customModule="RutePredictor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="45" width="351" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="z1S-BL-Lwh"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HbP-nF-9cO" customClass="FancyTextFields" customModule="RutePredictor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="90" width="351" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Jmn-rN-qSG"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRb-Mc-NAP" customClass="FancyButton" customModule="RutePredictor" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="135" width="351" height="40"/>
+                                                <color key="backgroundColor" red="0.33018699288368225" green="0.39267578721046448" blue="0.61576300859451294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="E0Z-r5-uH9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Register"/>
+                                                <connections>
+                                                    <action selector="loginOrRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zvv-SQ-AXb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rute Predictor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyJ-Lk-Nhg">
+                                        <rect key="frame" x="82" y="169" width="211" height="41"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.35782977939999999" green="0.46699389819999998" blue="0.70594930649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="DyJ-Lk-Nhg" firstAttribute="leading" secondItem="Beb-Bt-mZi" secondAttribute="leading" constant="82" id="1EE-cG-yU0"/>
+                                    <constraint firstItem="VAM-Tc-8nc" firstAttribute="centerX" secondItem="Beb-Bt-mZi" secondAttribute="centerX" id="AtC-93-xOM"/>
+                                    <constraint firstItem="VAM-Tc-8nc" firstAttribute="top" secondItem="Beb-Bt-mZi" secondAttribute="top" constant="52" id="WBI-m3-agA"/>
+                                    <constraint firstItem="yT3-fl-SBf" firstAttribute="top" secondItem="VAM-Tc-8nc" secondAttribute="bottom" constant="101" id="cow-7M-ia7"/>
+                                    <constraint firstAttribute="trailing" secondItem="yT3-fl-SBf" secondAttribute="trailing" constant="12" id="izf-ga-iz9"/>
+                                    <constraint firstItem="yT3-fl-SBf" firstAttribute="leading" secondItem="Beb-Bt-mZi" secondAttribute="leading" constant="12" id="jCW-Mw-Ps4"/>
+                                    <constraint firstItem="DyJ-Lk-Nhg" firstAttribute="top" secondItem="VAM-Tc-8nc" secondAttribute="bottom" constant="17" id="jr3-HC-lmd"/>
+                                    <constraint firstAttribute="trailing" secondItem="DyJ-Lk-Nhg" secondAttribute="trailing" constant="82" id="qsS-Rk-3CB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Beb-Bt-mZi" secondAttribute="trailing" id="661-wm-pji"/>
+                            <constraint firstItem="Beb-Bt-mZi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P3H-W5-ssJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Beb-Bt-mZi" secondAttribute="bottom" id="g5L-4i-clr"/>
+                            <constraint firstItem="Beb-Bt-mZi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sK0-al-qzh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtEmaiId" destination="lnl-UV-vqd" id="Tuc-yV-xAy"/>
+                        <outlet property="txtName" destination="Xly-mU-oxg" id="lsi-8W-SFg"/>
+                        <outlet property="txtPassword" destination="HbP-nF-9cO" id="TGe-Ah-H1K"/>
+                        <segue destination="CVy-bX-0fn" kind="show" identifier="showMap" id="KZr-Sz-ABP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mst-YY-lgq">
+            <objects>
+                <viewController id="IwX-Pt-nZw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vru-AO-Cqb"/>
+                        <viewControllerLayoutGuide type="bottom" id="I6w-Z4-X21"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R7e-Ts-axU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-EC-Ra8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g5n-0G-vYY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lmZ-Bd-JQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Oof-oh-3wE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CVy-bX-0fn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jj9-UK-wFu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IwX-Pt-nZw" kind="relationship" relationship="rootViewController" id="e71-h9-qic"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmL-uz-ev6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logoAn" width="50" height="44"/>
+    </resources>
 </document>

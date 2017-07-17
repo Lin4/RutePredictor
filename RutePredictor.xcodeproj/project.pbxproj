@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		08BF04831F1C1F08004EE2FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04821F1C1F08004EE2FF /* AppDelegate.swift */; };
-		08BF04851F1C1F08004EE2FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04841F1C1F08004EE2FF /* ViewController.swift */; };
+		08BF04851F1C1F08004EE2FF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04841F1C1F08004EE2FF /* LoginController.swift */; };
 		08BF04881F1C1F08004EE2FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BF04861F1C1F08004EE2FF /* Main.storyboard */; };
 		08BF048A1F1C1F08004EE2FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BF04891F1C1F08004EE2FF /* Assets.xcassets */; };
 		08BF048D1F1C1F08004EE2FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BF048B1F1C1F08004EE2FF /* LaunchScreen.storyboard */; };
+		08BF04991F1C4379004EE2FF /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04941F1C4379004EE2FF /* FancyView.swift */; };
+		08BF049A1F1C4379004EE2FF /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04951F1C4379004EE2FF /* FacebookButton.swift */; };
+		08BF049B1F1C4379004EE2FF /* FancyTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04961F1C4379004EE2FF /* FancyTextFields.swift */; };
+		08BF049C1F1C4379004EE2FF /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04971F1C4379004EE2FF /* FancyButton.swift */; };
+		08BF049D1F1C4379004EE2FF /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04981F1C4379004EE2FF /* CircleView.swift */; };
+		08BF04C61F1C4407004EE2FF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04C51F1C4407004EE2FF /* Constant.swift */; };
+		08BF04CB1F1C6D31004EE2FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08BF04CA1F1C6D31004EE2FF /* GoogleService-Info.plist */; };
+		B91F86D101B3A6B2239BEEA6 /* Pods_RutePredictor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A473F25D4051239605A5BA /* Pods_RutePredictor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08BF047F1F1C1F08004EE2FF /* RutePredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutePredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BF04821F1C1F08004EE2FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08BF04841F1C1F08004EE2FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08BF04841F1C1F08004EE2FF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		08BF04871F1C1F08004EE2FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08BF04891F1C1F08004EE2FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08BF048C1F1C1F08004EE2FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08BF048E1F1C1F08004EE2FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08BF04941F1C4379004EE2FF /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		08BF04951F1C4379004EE2FF /* FacebookButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
+		08BF04961F1C4379004EE2FF /* FancyTextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextFields.swift; sourceTree = "<group>"; };
+		08BF04971F1C4379004EE2FF /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		08BF04981F1C4379004EE2FF /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		08BF04C51F1C4407004EE2FF /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		08BF04CA1F1C6D31004EE2FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C4D334A15D05F94A291F5C1 /* Pods-RutePredictor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutePredictor.release.xcconfig"; path = "Pods/Target Support Files/Pods-RutePredictor/Pods-RutePredictor.release.xcconfig"; sourceTree = "<group>"; };
+		415EFA3EF3A31DB7529BCDF2 /* Pods-RutePredictor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutePredictor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RutePredictor/Pods-RutePredictor.debug.xcconfig"; sourceTree = "<group>"; };
+		71A473F25D4051239605A5BA /* Pods_RutePredictor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutePredictor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91F86D101B3A6B2239BEEA6 /* Pods_RutePredictor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				08BF04811F1C1F08004EE2FF /* RutePredictor */,
 				08BF04801F1C1F08004EE2FF /* Products */,
+				BB0FC92AAB65FC684A687358 /* Pods */,
+				E6F021B735A3948EBEC22A83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +76,53 @@
 			isa = PBXGroup;
 			children = (
 				08BF04821F1C1F08004EE2FF /* AppDelegate.swift */,
-				08BF04841F1C1F08004EE2FF /* ViewController.swift */,
-				08BF04861F1C1F08004EE2FF /* Main.storyboard */,
+				08BF04841F1C1F08004EE2FF /* LoginController.swift */,
 				08BF04891F1C1F08004EE2FF /* Assets.xcassets */,
+				08BF04C71F1C440D004EE2FF /* util */,
+				08BF049E1F1C438B004EE2FF /* view */,
 				08BF048B1F1C1F08004EE2FF /* LaunchScreen.storyboard */,
 				08BF048E1F1C1F08004EE2FF /* Info.plist */,
+				08BF04CA1F1C6D31004EE2FF /* GoogleService-Info.plist */,
 			);
 			path = RutePredictor;
+			sourceTree = "<group>";
+		};
+		08BF049E1F1C438B004EE2FF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				08BF04961F1C4379004EE2FF /* FancyTextFields.swift */,
+				08BF04971F1C4379004EE2FF /* FancyButton.swift */,
+				08BF04981F1C4379004EE2FF /* CircleView.swift */,
+				08BF04951F1C4379004EE2FF /* FacebookButton.swift */,
+				08BF04941F1C4379004EE2FF /* FancyView.swift */,
+				08BF04861F1C1F08004EE2FF /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		08BF04C71F1C440D004EE2FF /* util */ = {
+			isa = PBXGroup;
+			children = (
+				08BF04C51F1C4407004EE2FF /* Constant.swift */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		BB0FC92AAB65FC684A687358 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				415EFA3EF3A31DB7529BCDF2 /* Pods-RutePredictor.debug.xcconfig */,
+				0C4D334A15D05F94A291F5C1 /* Pods-RutePredictor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6F021B735A3948EBEC22A83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71A473F25D4051239605A5BA /* Pods_RutePredictor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08BF04911F1C1F08004EE2FF /* Build configuration list for PBXNativeTarget "RutePredictor" */;
 			buildPhases = (
+				A997C25AC910140A1021F13C /* [CP] Check Pods Manifest.lock */,
 				08BF047B1F1C1F08004EE2FF /* Sources */,
 				08BF047C1F1C1F08004EE2FF /* Frameworks */,
 				08BF047D1F1C1F08004EE2FF /* Resources */,
+				B425F335F23898C9FAA22B2D /* [CP] Embed Pods Frameworks */,
+				34404AFE87EB49EFF2C466D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08BF048D1F1C1F08004EE2FF /* LaunchScreen.storyboard in Resources */,
+				08BF04CB1F1C6D31004EE2FF /* GoogleService-Info.plist in Resources */,
 				08BF048A1F1C1F08004EE2FF /* Assets.xcassets in Resources */,
 				08BF04881F1C1F08004EE2FF /* Main.storyboard in Resources */,
 			);
@@ -132,13 +197,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34404AFE87EB49EFF2C466D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutePredictor/Pods-RutePredictor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A997C25AC910140A1021F13C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B425F335F23898C9FAA22B2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutePredictor/Pods-RutePredictor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08BF047B1F1C1F08004EE2FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08BF04851F1C1F08004EE2FF /* ViewController.swift in Sources */,
+				08BF049B1F1C4379004EE2FF /* FancyTextFields.swift in Sources */,
+				08BF04851F1C1F08004EE2FF /* LoginController.swift in Sources */,
+				08BF049A1F1C4379004EE2FF /* FacebookButton.swift in Sources */,
+				08BF04C61F1C4407004EE2FF /* Constant.swift in Sources */,
+				08BF049C1F1C4379004EE2FF /* FancyButton.swift in Sources */,
 				08BF04831F1C1F08004EE2FF /* AppDelegate.swift in Sources */,
+				08BF049D1F1C4379004EE2FF /* CircleView.swift in Sources */,
+				08BF04991F1C4379004EE2FF /* FancyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +378,7 @@
 		};
 		08BF04921F1C1F08004EE2FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 415EFA3EF3A31DB7529BCDF2 /* Pods-RutePredictor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HV597UH4PF;
@@ -272,6 +392,7 @@
 		};
 		08BF04931F1C1F08004EE2FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4D334A15D05F94A291F5C1 /* Pods-RutePredictor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HV597UH4PF;
