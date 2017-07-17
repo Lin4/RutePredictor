@@ -19,6 +19,8 @@
 		08BF049D1F1C4379004EE2FF /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04981F1C4379004EE2FF /* CircleView.swift */; };
 		08BF04C61F1C4407004EE2FF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04C51F1C4407004EE2FF /* Constant.swift */; };
 		08BF04CB1F1C6D31004EE2FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08BF04CA1F1C6D31004EE2FF /* GoogleService-Info.plist */; };
+		08BF04CF1F1C853F004EE2FF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04CE1F1C853F004EE2FF /* DataService.swift */; };
+		08BF04D21F1C86FE004EE2FF /* DetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04D11F1C86FE004EE2FF /* DetailViewViewController.swift */; };
 		B91F86D101B3A6B2239BEEA6 /* Pods_RutePredictor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A473F25D4051239605A5BA /* Pods_RutePredictor.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,9 @@
 		08BF04981F1C4379004EE2FF /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		08BF04C51F1C4407004EE2FF /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		08BF04CA1F1C6D31004EE2FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08BF04CE1F1C853F004EE2FF /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		08BF04D01F1C85C1004EE2FF /* RutePredictor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RutePredictor.entitlements; sourceTree = "<group>"; };
+		08BF04D11F1C86FE004EE2FF /* DetailViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewViewController.swift; path = ../DetailViewViewController.swift; sourceTree = "<group>"; };
 		0C4D334A15D05F94A291F5C1 /* Pods-RutePredictor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutePredictor.release.xcconfig"; path = "Pods/Target Support Files/Pods-RutePredictor/Pods-RutePredictor.release.xcconfig"; sourceTree = "<group>"; };
 		415EFA3EF3A31DB7529BCDF2 /* Pods-RutePredictor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutePredictor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RutePredictor/Pods-RutePredictor.debug.xcconfig"; sourceTree = "<group>"; };
 		71A473F25D4051239605A5BA /* Pods_RutePredictor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutePredictor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,12 +80,15 @@
 		08BF04811F1C1F08004EE2FF /* RutePredictor */ = {
 			isa = PBXGroup;
 			children = (
-				08BF04821F1C1F08004EE2FF /* AppDelegate.swift */,
-				08BF04841F1C1F08004EE2FF /* LoginController.swift */,
-				08BF04891F1C1F08004EE2FF /* Assets.xcassets */,
+				08BF04D01F1C85C1004EE2FF /* RutePredictor.entitlements */,
+				08BF04CD1F1C8526004EE2FF /* dataservice */,
+				08BF04CC1F1C730C004EE2FF /* controller */,
 				08BF04C71F1C440D004EE2FF /* util */,
 				08BF049E1F1C438B004EE2FF /* view */,
 				08BF048B1F1C1F08004EE2FF /* LaunchScreen.storyboard */,
+				08BF04861F1C1F08004EE2FF /* Main.storyboard */,
+				08BF04821F1C1F08004EE2FF /* AppDelegate.swift */,
+				08BF04891F1C1F08004EE2FF /* Assets.xcassets */,
 				08BF048E1F1C1F08004EE2FF /* Info.plist */,
 				08BF04CA1F1C6D31004EE2FF /* GoogleService-Info.plist */,
 			);
@@ -95,7 +103,6 @@
 				08BF04981F1C4379004EE2FF /* CircleView.swift */,
 				08BF04951F1C4379004EE2FF /* FacebookButton.swift */,
 				08BF04941F1C4379004EE2FF /* FancyView.swift */,
-				08BF04861F1C1F08004EE2FF /* Main.storyboard */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -106,6 +113,23 @@
 				08BF04C51F1C4407004EE2FF /* Constant.swift */,
 			);
 			name = util;
+			sourceTree = "<group>";
+		};
+		08BF04CC1F1C730C004EE2FF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				08BF04841F1C1F08004EE2FF /* LoginController.swift */,
+				08BF04D11F1C86FE004EE2FF /* DetailViewViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		08BF04CD1F1C8526004EE2FF /* dataservice */ = {
+			isa = PBXGroup;
+			children = (
+				08BF04CE1F1C853F004EE2FF /* DataService.swift */,
+			);
+			name = dataservice;
 			sourceTree = "<group>";
 		};
 		BB0FC92AAB65FC684A687358 /* Pods */ = {
@@ -162,6 +186,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = HV597UH4PF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -250,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BF04CF1F1C853F004EE2FF /* DataService.swift in Sources */,
 				08BF049B1F1C4379004EE2FF /* FancyTextFields.swift in Sources */,
 				08BF04851F1C1F08004EE2FF /* LoginController.swift in Sources */,
 				08BF049A1F1C4379004EE2FF /* FacebookButton.swift in Sources */,
@@ -257,6 +287,7 @@
 				08BF049C1F1C4379004EE2FF /* FancyButton.swift in Sources */,
 				08BF04831F1C1F08004EE2FF /* AppDelegate.swift in Sources */,
 				08BF049D1F1C4379004EE2FF /* CircleView.swift in Sources */,
+				08BF04D21F1C86FE004EE2FF /* DetailViewViewController.swift in Sources */,
 				08BF04991F1C4379004EE2FF /* FancyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +412,7 @@
 			baseConfigurationReference = 415EFA3EF3A31DB7529BCDF2 /* Pods-RutePredictor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RutePredictor/RutePredictor.entitlements;
 				DEVELOPMENT_TEAM = HV597UH4PF;
 				INFOPLIST_FILE = RutePredictor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -395,6 +427,7 @@
 			baseConfigurationReference = 0C4D334A15D05F94A291F5C1 /* Pods-RutePredictor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RutePredictor/RutePredictor.entitlements;
 				DEVELOPMENT_TEAM = HV597UH4PF;
 				INFOPLIST_FILE = RutePredictor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -423,6 +456,7 @@
 				08BF04931F1C1F08004EE2FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

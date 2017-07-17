@@ -62,7 +62,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRb-Mc-NAP" customClass="FancyButton" customModule="RutePredictor" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="135" width="351" height="40"/>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View View Controller-->
         <scene sceneID="mst-YY-lgq">
             <objects>
-                <viewController id="IwX-Pt-nZw" sceneMemberID="viewController">
+                <viewController id="IwX-Pt-nZw" customClass="DetailViewViewController" customModule="RutePredictor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vru-AO-Cqb"/>
                         <viewControllerLayoutGuide type="bottom" id="I6w-Z4-X21"/>
@@ -130,14 +130,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-EC-Ra8">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-EC-Ra8">
                                 <rect key="frame" x="0.0" y="64" width="375" height="269"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="g5n-0G-vYY"/>
+                    <navigationItem key="navigationItem" id="g5n-0G-vYY">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="izK-ba-F05">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="95V-hR-bCu">
+                                <rect key="frame" x="16" y="7" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C85-tP-wPn"/>
+                                    <constraint firstAttribute="width" constant="42" id="hEl-2t-1iW"/>
+                                </constraints>
+                                <state key="normal" image="sign-out"/>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="IwX-Pt-nZw" eventType="touchUpInside" id="Pvk-id-AD2"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="8K6-EC-Ra8" id="fT3-5v-vHu"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="gotoSignin" id="W1I-w1-buA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lmZ-Bd-JQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,9 +167,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CVy-bX-0fn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jj9-UK-wFu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="jj9-UK-wFu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.35782977939999999" green="0.46699389819999998" blue="0.70594930649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.35782977939999999" green="0.46699389819999998" blue="0.70594930649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -164,5 +185,6 @@
     </scenes>
     <resources>
         <image name="logoAn" width="50" height="44"/>
+        <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
