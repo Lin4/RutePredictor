@@ -20,7 +20,8 @@ class DetailViewViewController: UIViewController {
 
     }
     @IBAction func signOutTapped(_ sender: Any) {
-        let _: Bool = KeychainWrapper.standard.removeObject(forKey: "KEY_UID")
+        let keychainResult = KeychainWrapper.standard.removeObject(forKey: "KEY_UID")
+        print("Lin:\(keychainResult)")
         try! Auth.auth().signOut()
         performSegue(withIdentifier: "gotoSignin", sender: nil)
     }

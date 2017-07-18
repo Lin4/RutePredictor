@@ -19,6 +19,7 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
     }
+
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             performSegue(withIdentifier: "showMap", sender: nil)
@@ -59,9 +60,6 @@ class LoginController: UIViewController {
 }
 
 
-
-    
-   
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
