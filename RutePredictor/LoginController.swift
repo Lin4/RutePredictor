@@ -12,7 +12,7 @@ import SwiftKeychainWrapper
 
 class LoginController: UIViewController {
 
-    @IBOutlet weak var txtName: FancyTextFields!
+    
     @IBOutlet weak var txtEmaiId: FancyTextFields!
     @IBOutlet weak var txtPassword: FancyTextFields!
     override func viewDidLoad() {

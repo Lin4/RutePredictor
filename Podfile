@@ -5,11 +5,13 @@ target 'RutePredictor' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for RutePredictor
-  	pod 'Firebase/Database'
-	pod 'Firebase/Auth'
-	pod 'Firebase/Storage'
-	pod 'Firebase/Core'
+  #  Pods for RutePredictor
+  	 pod 'Firebase/Database'
+	   pod 'Firebase/Auth'
+	   pod 'Firebase/Storage'
+	   pod 'Firebase/Core'
     pod 'SwiftKeychainWrapper', :git => 'https://github.com/jrendel/SwiftKeychainWrapper.git', :branch => 'master'
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
 
 end

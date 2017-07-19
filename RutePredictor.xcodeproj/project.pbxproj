@@ -21,6 +21,7 @@
 		08BF04CB1F1C6D31004EE2FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08BF04CA1F1C6D31004EE2FF /* GoogleService-Info.plist */; };
 		08BF04CF1F1C853F004EE2FF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04CE1F1C853F004EE2FF /* DataService.swift */; };
 		08BF04D21F1C86FE004EE2FF /* DetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04D11F1C86FE004EE2FF /* DetailViewViewController.swift */; };
+		08BF04D41F1E9164004EE2FF /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF04D31F1E9164004EE2FF /* MapController.swift */; };
 		B91F86D101B3A6B2239BEEA6 /* Pods_RutePredictor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A473F25D4051239605A5BA /* Pods_RutePredictor.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		08BF04CE1F1C853F004EE2FF /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		08BF04D01F1C85C1004EE2FF /* RutePredictor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RutePredictor.entitlements; sourceTree = "<group>"; };
 		08BF04D11F1C86FE004EE2FF /* DetailViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewViewController.swift; path = ../DetailViewViewController.swift; sourceTree = "<group>"; };
+		08BF04D31F1E9164004EE2FF /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		0C4D334A15D05F94A291F5C1 /* Pods-RutePredictor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutePredictor.release.xcconfig"; path = "Pods/Target Support Files/Pods-RutePredictor/Pods-RutePredictor.release.xcconfig"; sourceTree = "<group>"; };
 		415EFA3EF3A31DB7529BCDF2 /* Pods-RutePredictor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutePredictor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RutePredictor/Pods-RutePredictor.debug.xcconfig"; sourceTree = "<group>"; };
 		71A473F25D4051239605A5BA /* Pods_RutePredictor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutePredictor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 			children = (
 				08BF04841F1C1F08004EE2FF /* LoginController.swift */,
 				08BF04D11F1C86FE004EE2FF /* DetailViewViewController.swift */,
+				08BF04D31F1E9164004EE2FF /* MapController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				08BF04CF1F1C853F004EE2FF /* DataService.swift in Sources */,
 				08BF049B1F1C4379004EE2FF /* FancyTextFields.swift in Sources */,
 				08BF04851F1C1F08004EE2FF /* LoginController.swift in Sources */,
+				08BF04D41F1E9164004EE2FF /* MapController.swift in Sources */,
 				08BF049A1F1C4379004EE2FF /* FacebookButton.swift in Sources */,
 				08BF04C61F1C4407004EE2FF /* Constant.swift in Sources */,
 				08BF049C1F1C4379004EE2FF /* FancyButton.swift in Sources */,

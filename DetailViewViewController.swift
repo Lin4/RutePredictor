@@ -7,17 +7,17 @@
 //
 
 import UIKit
-import MapKit
 import SwiftKeychainWrapper
 import Firebase
+import GoogleMaps
 
 class DetailViewViewController: UIViewController {
 
-    @IBOutlet weak var mapView: MKMapView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+     
     }
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: "KEY_UID")
