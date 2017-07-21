@@ -13,5 +13,6 @@ target 'RutePredictor' do
     pod 'SwiftKeychainWrapper', :git => 'https://github.com/jrendel/SwiftKeychainWrapper.git', :branch => 'master'
     pod 'GoogleMaps'
     pod 'GooglePlaces'
+    pod 'Alamofire', '~> 4.4'
 
 end

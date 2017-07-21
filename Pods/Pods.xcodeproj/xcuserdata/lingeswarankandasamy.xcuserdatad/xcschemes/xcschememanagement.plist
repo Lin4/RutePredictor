@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C058CC179FDFE8EEC0AE5F860C1251E</key>
+		<key>16CEEE42974E19DDBE0E716910AE5A92</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A31B897DE0FFF148C025DE60CF2C5968</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A07FD79DAA7AFDDDE28AAA678D3EA569</key>
 		<dict>
 			<key>primary</key>
 			<true/>

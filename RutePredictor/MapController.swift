@@ -16,8 +16,7 @@ class MapController: UIViewController, CLLocationManagerDelegate{
     var locationManager = CLLocationManager()
     let marker = GMSMarker()
     var mapView: GMSMapView!
-   
-    
+      
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self

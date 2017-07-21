@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C058CC179FDFE8EEC0AE5F860C1251E"
+               BlueprintIdentifier = "A07FD79DAA7AFDDDE28AAA678D3EA569"
                BuildableName = "Pods_RutePredictor.framework"
                BlueprintName = "Pods-RutePredictor"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C058CC179FDFE8EEC0AE5F860C1251E"
+            BlueprintIdentifier = "A07FD79DAA7AFDDDE28AAA678D3EA569"
             BuildableName = "Pods_RutePredictor.framework"
             BlueprintName = "Pods-RutePredictor"
             ReferencedContainer = "container:Pods.xcodeproj">
