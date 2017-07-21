@@ -157,7 +157,7 @@
                                     <constraint firstAttribute="height" constant="359" id="3sv-Cu-xwd"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" id="Jdg-te-ehP" customClass="WeatherCell" customModule="RutePredictor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" id="Jdg-te-ehP" customClass="WeatherCell" customModule="RutePredictor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jdg-te-ehP" id="GWs-Oe-351">
@@ -272,7 +272,7 @@
                                                                         <constraint firstAttribute="width" constant="103" id="Nz8-5Q-G0q"/>
                                                                     </constraints>
                                                                 </stackView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="61S-I8-R2M" customClass="CircleView" customModule="RutePredictor" customModuleProvider="target">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="61S-I8-R2M">
                                                                     <rect key="frame" x="103" y="42.5" width="34" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="34" id="CFB-kU-dRW"/>
@@ -284,12 +284,20 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.247624442" green="0.55003774169999997" blue="0.44319698210000003" alpha="0.40156785104246573" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="oee-B2-91i" firstAttribute="top" secondItem="GWs-Oe-351" secondAttribute="topMargin" id="93H-0v-lSq"/>
                                                 <constraint firstAttribute="trailing" secondItem="oee-B2-91i" secondAttribute="trailing" id="Ulw-cb-u3u"/>
                                                 <constraint firstItem="oee-B2-91i" firstAttribute="leading" secondItem="GWs-Oe-351" secondAttribute="leading" constant="1" id="p36-EZ-Q3b"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="N98-ah-zUX" id="avF-O6-gSB"/>
+                                            <outlet property="highTemp" destination="gzW-O6-6h3" id="9hV-Cx-7Of"/>
+                                            <outlet property="weatherIcon" destination="61S-I8-R2M" id="AbO-NX-2tf"/>
+                                            <outlet property="weatherType" destination="0Xl-M4-p0f" id="oiQ-VO-i5v"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -343,7 +351,7 @@
                 </label>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lmZ-Bd-JQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888" y="153"/>
+            <point key="canvasLocation" x="964" y="139"/>
         </scene>
         <!--Map Controller-->
         <scene sceneID="UUY-Xj-CxH">

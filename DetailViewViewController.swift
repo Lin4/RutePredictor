@@ -34,8 +34,11 @@ override func viewDidLoad() {
     
     tableView.delegate = self
     tableView.dataSource = self
-    
+    self.tableView.separatorColor = UIColor.white
     currentWeather = CurrentWeather()
+    currentWeather.downloadWeatherDetails {
+        
+    }
     
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -85,33 +88,20 @@ override func viewDidLoad() {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return forecasts.count
-        return 4
+        return forecasts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-    let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
-        
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
             
-//            as? WeatherCell {
-//            
-//            let forecast = forecasts[indexPath.row]
-//            cell.configureCell(forecast: forecast)
-//            return cell
-//        } else {
-//            return WeatherCell()
-//        }
+            let forecast = forecasts[indexPath.row]
+            cell.configureCell(forecast: forecast)
+            return cell
+        } else {
+            return WeatherCell()
+        }
     }
-    
-//    func updateMainUI() {
-//        dateLabel.text = currentWeather.date
-//        currentTempLabel.text = "\(currentWeather.currentTemp)"
-//        currentWeatherTypeLabel.text = currentWeather.weatherType
-//        locationLabel.text = currentWeather.cityName
-//        currentWeatherImage.image = UIImage(named: currentWeather.weatherType)
-//    }
     
 
     @IBAction func signOutTapped(_ sender: Any) {

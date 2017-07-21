@@ -53,7 +53,7 @@ class CurrentWeather {
         //Download Current Weather Data
         Alamofire.request(CURRENT_WEATHER_URL).responseJSON { response in
             let result = response.result
-            
+            print("LIN:\(response)")
             if let dict = result.value as? Dictionary<String, AnyObject> {
                 
                 if let name = dict["name"] as? String {
@@ -67,13 +67,13 @@ class CurrentWeather {
                         self._weatherType = main.capitalized
                         print(self._weatherType)
                     }
-                
+                    
                 }
                 
                 if let main = dict["main"] as? Dictionary<String, AnyObject> {
                     
                     if let currentTemperature = main["temp"] as? Double {
-                    
+                        
                         let kelvinToFarenheitPreDivision = (currentTemperature * (9/5) - 459.67)
                         
                         let kelvinToFarenheit = Double(round(10 * kelvinToFarenheitPreDivision/10))
@@ -87,15 +87,3 @@ class CurrentWeather {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
