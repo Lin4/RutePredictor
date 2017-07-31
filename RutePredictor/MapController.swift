@@ -23,7 +23,7 @@ class MapController: UIViewController, CLLocationManagerDelegate{
         locationManager.requestWhenInUseAuthorization()
         GMSServices.provideAPIKey("AIzaSyCKCgrxyuPLaRfsMklVgu7zGpdTDjzCvx4")
         locationManager.startUpdatingLocation()
-        
+         self.navigationController?.navigationBar.backItem?.title = ""
         let camera = GMSCameraPosition.camera(withLatitude: 37.621262, longitude: -122.378945, zoom:15)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView

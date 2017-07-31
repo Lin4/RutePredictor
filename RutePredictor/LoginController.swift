@@ -17,7 +17,9 @@ class LoginController: UIViewController {
     @IBOutlet weak var txtPassword: FancyTextFields!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = ""
         self.hideKeyboardWhenTappedAround()
+        self.navigationController?.navigationBar.backItem?.title = " "
     }
 
     override func viewDidAppear(_ animated: Bool) {

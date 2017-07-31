@@ -14,5 +14,6 @@ target 'RutePredictor' do
     pod 'GoogleMaps'
     pod 'GooglePlaces'
     pod 'Alamofire', '~> 4.4'
+    pod 'LocationPicker'
 
 end
