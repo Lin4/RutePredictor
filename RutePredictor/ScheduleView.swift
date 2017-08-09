@@ -23,6 +23,7 @@ class ScheduleView: UIViewController {
     {
         didSet {
             destnationBtn.setTitle (location.flatMap({ $0.title }) ?? "No location selected", for: .normal)
+            Locations.sharedInstance.DestinationLocation = location.flatMap({ $0.title })
        }
     }
 
@@ -60,7 +61,7 @@ class ScheduleView: UIViewController {
         else if segue.identifier == "PickAlarmTime"{
             self.title = ""
             let dateTimePicker = segue.destination as! ScheduleRepetController
-            dateTimePicker.callbackAlarmTime2 = {self.alarmTime.setTitle($0, for: .normal)}
+           // dateTimePicker.callbackAlarmTime1 = {self.alarmTime.setTitle($0, for: .normal)}
         }
 
     }

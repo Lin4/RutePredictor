@@ -250,7 +250,7 @@ extension LocationPickerViewController: UISearchResultsUpdating {
 			// clear old results
 			showItemsForSearchResult(nil)
 			
-			searchTimer = Timer.scheduledTimer(timeInterval: 0.2,
+                searchTimer = Timer.scheduledTimer(timeInterval: 0.2,
 				target: self, selector: #selector(LocationPickerViewController.searchFromTimer(_:)),
 				userInfo: [LocationPickerViewController.SearchTermKey: searchTerm],
 				repeats: false)
@@ -314,7 +314,7 @@ extension LocationPickerViewController {
 			
 			geocoder.cancelGeocode()
 			geocoder.reverseGeocodeLocation(location) { response, error in
-				if let error = error as? NSError, error.code != 10 { // ignore cancelGeocode errors
+				if let error = error as NSError?, error.code != 10 { // ignore cancelGeocode errors
 					// show error and remove annotation
 					let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
 					alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in }))

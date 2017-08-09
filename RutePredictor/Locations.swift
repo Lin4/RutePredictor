@@ -14,4 +14,7 @@ class Locations {
     
     var latitude: Double!
     var longitude: Double!
+    var currentAddress: String!
+    var DestinationLocation: String!
+    var destinationAddressURL: String!
 }

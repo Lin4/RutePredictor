@@ -33,7 +33,7 @@ class LocationSearchResultsViewController: UITableViewController {
 			?? UITableViewCell(style: .subtitle, reuseIdentifier: "LocationCell")
 
 		let location = locations[indexPath.row]
-		cell.textLabel?.text = location.name
+		cell.textLabel?.text = location.address
 		cell.detailTextLabel?.text = location.address
 		
 		return cell

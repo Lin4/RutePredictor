@@ -9,36 +9,54 @@
 import UIKit
 
 
-class ScheduleRepetController: UIViewController {
+class ScheduleRepetController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    
+    var repetTypes: [String] = []
+    
+    @IBOutlet weak var tableView: UITableView!
   
-    var callbackAlarmTime2 : ((String) -> Void)?
-    var callbackAlarmTime3 : ((String) -> Void)?
-    var dateFormatter, timeFormatter : DateFormatter!
+
 
 	
     override func viewDidLoad() {
         super.viewDidLoad()
- self.navigationController?.navigationBar.backItem?.title = ""
+        self.navigationController?.navigationBar.backItem?.title = ""
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        repetTypes = [ "Every Sunday","Every Monday","Every Tuesday","Every Wednesday","Every Thursday","Every Friday","Every Saturday"]
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return repetTypes.count
     }
 
-    @IBAction func date_picker_change_action(_ sender : UIDatePicker){
-      //  show_date_lbl.text = dateFormatter.string(from: sender.date)
-        // Alarm time with date
-       // show_Time_lbl.text = dateFormatter.string(from: sender.date)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier:"AlamRepetCell", for: indexPath) as? AlamRepetType
+        cell?.layer.borderWidth = 0.5
+        cell?.layer.borderColor = UIColor.white.cgColor
+        cell?.alamRepetType.text = repetTypes[indexPath.row]
+        return cell!
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    @IBAction func done(sender: AnyObject){
-      //  callbackAlarmTime2?( show_date_lbl.text! )
-       // callbackAlarmTime3?( show_Time_lbl.text! )
-        self.navigationController!.popViewController(animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if let cell = tableView.cellForRow(at: indexPath as IndexPath) {
+            if cell.accessoryType == .checkmark{
+                cell.accessoryType = .none
+            }
+            else{
+                cell.accessoryType = .checkmark
+            }
+        }
+        
     }
     
 }
-
-

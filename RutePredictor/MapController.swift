@@ -9,8 +9,6 @@
 import UIKit
 import GoogleMaps
 
-
-
 class MapController: UIViewController, CLLocationManagerDelegate{
     
     var locationManager = CLLocationManager()
@@ -60,11 +58,10 @@ class MapController: UIViewController, CLLocationManagerDelegate{
         
                     if let locationName = placeMark.addressDictionary!["Name"] as? NSString {
                         self.marker.snippet = locationName as String
-                    }
-                    }
-                })
+                }
+            }
+        })
+   
     }
-    
-    
 }
 

@@ -49,6 +49,6 @@ extension Location: MKAnnotation {
 	}
 	
     public var title: String? {
-		return name ?? address
+		return address 
 	}
 }
